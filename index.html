@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keystone Labs FZ-LLC</title>
+<meta name="description" content="Keystone Labs FZ-LLC is a software house registered in Ras Al Khaimah, United Arab Emirates. We build tools that let small businesses run their own marketing.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://keystonelabs.pro/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Keystone Labs FZ-LLC">
+<meta property="og:description" content="A software house registered in Ras Al Khaimah, UAE. We build tools that let small businesses run their own marketing.">
+<meta property="og:url" content="https://keystonelabs.pro/">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23191b1e'/%3E%3Cpath d='M11 10h10l3 12H8z' fill='%23c08f4a'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+  /* --------------------------------------------------------------------
+     Palette. A keystone is the wedge at the crown of an arch — the stone
+     that holds the others up. So: limestone ground, ink text, one brass
+     accent, and nothing else competing for attention.
+     -------------------------------------------------------------------- */
+  :root {
+    --ground:  #F3F3F0;
+    --surface: #FFFFFF;
+    --ink:     #191B1E;
+    --muted:   #63686F;
+    --rule:    #DCDCD6;
+    --brass:   #96682B;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:  #0F1114;
+      --surface: #16191D;
+      --ink:     #E8E8E4;
+      --muted:   #979DA5;
+      --rule:    #272B31;
+      --brass:   #D2A461;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground:  #0F1114;
+    --surface: #16191D;
+    --ink:     #E8E8E4;
+    --muted:   #979DA5;
+    --rule:    #272B31;
+    --brass:   #D2A461;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 43rem;
+    margin: 0 auto;
+    padding: clamp(2.5rem, 7vw, 5.5rem) clamp(1.25rem, 5vw, 2rem) 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2.5rem, 6vw, 3.75rem);
+  }
+
+  /* --- masthead ----------------------------------------------------- */
+  .masthead { display: flex; flex-direction: column; gap: 1.5rem; }
+
+  .mark { display: flex; align-items: center; gap: 0.85rem; }
+  .mark svg { display: block; flex: none; }
+  .mark span {
+    font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 0;
+    font-family: Spectral, Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-size: clamp(2.1rem, 6.5vw, 3.1rem);
+    line-height: 1.12;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+  h1 .suffix { color: var(--muted); font-weight: 300; }
+
+  .standfirst {
+    margin: 0;
+    max-width: 34rem;
+    font-size: clamp(1.05rem, 2.4vw, 1.2rem);
+    line-height: 1.55;
+    color: var(--muted);
+    text-wrap: pretty;
+  }
+
+  /* --- sections ----------------------------------------------------- */
+  section { display: flex; flex-direction: column; gap: 1rem; }
+
+  h2 {
+    margin: 0;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--brass);
+    padding-bottom: 0.85rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  p { margin: 0; text-wrap: pretty; }
+  p + p { margin-top: 0.9rem; }
+
+  /* --- the register ------------------------------------------------- */
+  .register {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+  }
+  .register dl {
+    margin: 0;
+    display: grid;
+    grid-template-columns: minmax(9.5rem, 14rem) 1fr;
+  }
+  .register dt, .register dd {
+    margin: 0;
+    padding: 0.8rem 1.15rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .register dt {
+    font-size: 0.83rem;
+    color: var(--muted);
+    letter-spacing: 0.01em;
+  }
+  .register dd { font-size: 0.95rem; }
+  .register dl > :nth-last-child(1),
+  .register dl > :nth-last-child(2) { border-bottom: 0; }
+
+  .num {
+    font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-variant-numeric: tabular-nums;
+    font-size: 0.9rem;
+    letter-spacing: 0.01em;
+  }
+
+  @media (max-width: 34rem) {
+    .register dl { grid-template-columns: 1fr; }
+    .register dt { padding-bottom: 0; border-bottom: 0; }
+    .register dd { padding-top: 0.2rem; }
+    .register dl > :nth-last-child(2) { border-bottom: 0; }
+  }
+
+  /* --- contact ------------------------------------------------------ */
+  a { color: var(--brass); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+  a:hover { color: var(--ink); }
+  a:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; border-radius: 2px; }
+
+  .contact-line {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 1rem;
+  }
+
+  footer {
+    border-top: 1px solid var(--rule);
+    padding-top: 1.5rem;
+    font-size: 0.83rem;
+    color: var(--muted);
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <header class="masthead">
+    <div class="mark">
+      <!-- The keystone: the wedge at the crown of an arch. -->
+      <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M11 9h10l3.5 14h-17z" fill="var(--brass)"></path>
+      </svg>
+      <span>Keystone Labs</span>
+    </div>
+
+    <h1>Keystone&nbsp;Labs <span class="suffix">FZ-LLC</span></h1>
+
+    <p class="standfirst">
+      A software house registered in Ras Al Khaimah, United Arab Emirates.
+      We build tools that let a small business run its own marketing —
+      without hiring an agency and without learning a design program.
+    </p>
+  </header>
+
+  <section>
+    <h2>What we build</h2>
+    <p>
+      Most small businesses know they should be posting. Very few have an hour a
+      day to spend on it, and the software built for this problem assumes a
+      marketing team that a café or a barber shop does not have.
+    </p>
+    <p>
+      Our products start from the opposite assumption: the work is already done
+      when the owner opens the app. Their job is to say yes, or send it back.
+      Everything else — the writing, the pictures, the schedule, the publishing
+      to their own accounts — is ours.
+    </p>
+  </section>
+
+  <section>
+    <h2>Company register</h2>
+    <div class="register">
+      <dl>
+        <dt>Legal name</dt>
+        <dd>KEYSTONE LABS FZ-LLC</dd>
+
+        <dt>Legal form</dt>
+        <dd>Free Zone Limited Liability Company</dd>
+
+        <dt>Registrar</dt>
+        <dd>Ras Al Khaimah Economic Zone Authority (RAKEZ), Government of Ras Al Khaimah, UAE</dd>
+
+        <dt>Commercial registration</dt>
+        <dd class="num">0000004095394</dd>
+
+        <dt>Licence number</dt>
+        <dd class="num">47036498 <span style="color:var(--muted)">· Services Licence</span></dd>
+
+        <dt>Licensed activity</dt>
+        <dd>Software House · Computer Systems and Software Designing · Information Technology Network Services</dd>
+
+        <dt>Incorporated</dt>
+        <dd class="num">24 August 2026</dd>
+
+        <dt>Registered address</dt>
+        <dd>FDBC6549, Compass Building, Al Shohada Road,<br>Al Hamra Industrial Zone-FZ, Ras Al Khaimah,<br>United Arab Emirates</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p class="contact-line">
+      <a href="mailto:hello@keystonelabs.pro">hello@keystonelabs.pro</a>
+    </p>
+    <p style="color:var(--muted); font-size:0.92rem">
+      For anything at all — commercial questions, press, or a request about
+      personal data we hold. Data-rights requests reach a person, not a queue.
+    </p>
+  </section>
+
+  <footer>
+    <div>© 2026 Keystone Labs FZ-LLC. All rights reserved.</div>
+    <div>Registered in Ras Al Khaimah, United Arab Emirates · Licence 47036498</div>
+  </footer>
+
+</main>
+</body>
+</html>
